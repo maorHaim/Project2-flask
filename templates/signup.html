@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .image-container {
+            width: 10px;
+            height: 20px;
+        }
+            h1 {
+              margin-top: 150px;
+              }
+
+            form {
+                margin-top: 20px;
+                }
+
+
+    </style>
+    <title>signup</title>
+</head>
+<body>
+
+ <div class="image-container">
+      <img src="https://img.freepik.com/free-photo/top-view-organized-desk-with-keyboard-succulent-plant_23-2148414988.jpg" alt="Logo">
+         </div>
+<h1>SIGNUP</h1>
+   <form method="post" enctype="multipart/form-data">
+    <label>Enter your first name:</label>
+    <input type="text" name="fname" required>
+    <br>
+    <label>Enter your last name:</label>
+    <input type="text" name="lname" required>
+    <br>
+    <label>Enter your age:</label>
+    <input type="number" name="age" required>
+    <br>
+    <label> Please upload Your Picture</label>
+      <input type="file" name="filename" ><br>    <br>
+    <label>Create New UserName</label>
+    <input type="text" name="username" required>
+    <br>
+    <label>Create New Password</label>
+    <input type="password" name="password" required>
+    <br>
+    <input type="submit" value="signup">
+</form>
+ <h4>Already have accuont? <a href="/login">login</a> </h4>
+ <a href="/homepage">Homepage</a>
+
+</body>
+</html>

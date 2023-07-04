@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{{url_for('static', filename='mystyle.css') }}" rel="stylesheet">
+
+    <style>
+        .image-container {
+            width: 10px;
+            height: 20px;
+
+        }
+    </style>
+
+    <title>success</title>
+</head>
+<body>
+<div class="image-container">
+      <img src="https://img.freepik.com/premium-photo/destop-computer-screen-white-deskworking-spaceworking-background-interior-woking-room_259422-431.jpg" alt="Logo">
+         </div>
+<h1>Welcome New Users</h1>
+
+<table>
+      <th>
+        <tr style="color:blue;">
+              <td>user name</td>
+                <td>Age</td>
+          </tr>
+      </th>
+    {% for user in my_users %}
+      <tr>
+          <td>{{ user[0] }}</td>
+          <td>{{ user[1] }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+</body>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+ <a href="/homepage">Homepage</a>
+<a href="/listUsers">List All Users</a>
+</html>

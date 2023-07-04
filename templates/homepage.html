@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>homepage</title>
+    <link href="{{url_for('static', filename='mystyle.css') }}" rel="stylesheet">
+    <style>
+        .image-container {
+            width: 10px;
+            height: 20px;
+        }
+        .gif-container img {
+            width: 120px;
+            height: auto;
+            margin-left: 4cm;
+        }
+         .button-container {
+            text-align: top;
+            margin-top: 50px;
+        }
+        .signup-button {
+            font-size: 18px;
+            padding: 10px 10px;
+            background-color: #ff0000;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+        }
+        .rounded-button {
+             background-color: #337ab7;
+             color: #fff;
+             padding: 15px 100px;
+             border: none;
+             border-radius: 200px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+     <div class="image-container">
+      <img src="https://img.freepik.com/free-photo/office-desk-concept-with-essential-elements_23-2148223224.jpg" alt="Logo">
+         </div>
+<h1> Welcome Home </h1>
+       <h2>flask Maor app </h2>
+     <div class="button-container">
+         <h5>Already have accuont?<button class="signup-button" onclick="window.location.href='/login'">Login</button> </h5>
+         <h5>Dont have an account?<button class="signup-button" onclick="window.location.href='/signup'">Sign Up</button></h5>
+     </div>
+<div class="gif-container">
+        <img src="https://fcit.usf.edu/matrix/wp-content/uploads/2017/01/DanceBot-3-Sm.gif" alt="Animation">
+    </div>
+
+</body>
+<br><br><br><br><br><br>
+ <button class="rounded-button" onclick="window.location.href='/listUsers'">List All Users</button>
+
+</html>

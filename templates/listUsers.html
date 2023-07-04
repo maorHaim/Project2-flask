@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{{url_for('static', filename='mystyle.css') }}" rel="stylesheet">
+
+    <style>
+        .image-container {
+            width: 1000px;
+            height: 200px;
+
+        }
+        .welcome-heading {
+            background-color: #337ab7;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+    <title>listUsers</title>
+</head>
+ <div class="welcome-heading">
+
+     <h1>Welcome All Users</h1>  </div>     <h3> <a href="/homepage">Homepage</a> <a href="/login">login</a></h3>
+
+<body>
+
+
+
+<table>
+      <th>
+        <tr style="color:green;">
+              <td>First name</td>
+                <td>last name</td>
+                <td>Age</td>
+                <td>User Name</td>
+                <td>Picture</td>
+
+          </tr>
+      </th>
+
+          {% for user in users_data %}
+            <tr>
+          <td>{{user.first_name}}</td>
+          <td>{{user.last_name}}</td>
+          <td>{{user.age}}</td>
+          <td>{{user.user_name}}</td>
+          <td>
+              {% if user .picture %}
+              <img src="static/uploads/{{user.picture}}">
+              {% endif %}
+          </td>
+
+
+            </tr>
+          {% endfor %}
+
+
+  </table>
+
+</body>
+</html>

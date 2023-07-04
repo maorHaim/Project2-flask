@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        .image-container {
+            width: 10px;
+            height: 20px;
+        }
+        .error-message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+     <div class="image-container">
+      <img src="https://img.freepik.com/premium-vector/laptop-programming-code-project-app-developer-computer-vector_3482-5877.jpg" alt="Logo">
+         </div>
+     <h1>Login</h1>
+     {% if error_message %}
+  <div class="error-message">{{ error_message }}</div>
+    {% endif %}
+
+         <form method="post" action="/login">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <input type="submit" value="Login">
+             <br>
+    </form>
+
+
+      <h4> Dont have an account?</h4>
+     <label>Press:</label>
+    <a href="/signup">Signup</a>
+<br><br><br><br><br>
+     <br><br><br>
+ <a href="/homepage">Homepage</a>
+
+    <a href="/listUsers">List All Users</a>
+
+</body>
